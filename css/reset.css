@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap');
+
+:root{
+    /* Colors */
+    --body-color: #FDFDFF;
+    --text-color:#4F4F4F;
+    --numbers-color:#979797;
+    --card-color:#EBEBEB;
+    --sidebar-color:#EBEBEB;
+    --sidebar-icons-color:#DFE6F1;
+    --hover-color:#7F7FD5;
+    --pink:#E786D7;
+    --purple:#7F7FD5;
+
+    /* Font-family */
+    --heebo: 'Heebo', sans-serif;
+
+    /* Font-size */
+    --biggest-font-size:2.5rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /* Font weight */
+    --medium:500;
+    --semi-bold:600;
+    --bold:700;
+    --black:900;
+
+    /* Z-index */
+    --z-tooltip:10;
+    --z-fixed:100;
+
+    /* Margin-bottom */
+    --mb-0-25:.25rem;
+    --mb-0-5:.5rem;
+    --mb-0-75:.75rem;
+    --mb-1:1rem;
+    --mb-1-25:1.25rem;
+    --mb-1-5:1.5rem;
+    --mb-2:2rem;
+    --mb-2-5:2.5rem;
+    --mb-3:3rem;
+}
+
+body.dark{
+    --body-color: #212427;
+    --text-color:#CACACA;
+    --numbers-color:#979797;
+    --card-color:#282C31;
+    --sidebar-color:#282C31;
+    --sidebar-icons-color:#CACACA;
+    --hover-color:#7F7FD5;
+    --pink:#E786D7;
+    --purple:#7F7FD5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--heebo);
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+button, input{
+    border: none;
+    outline: none;
+}
+
+button{
+    cursor: pointer;
+    font-family: var(--heebo);
+    font-size: var(--normal-font-size);
+}
