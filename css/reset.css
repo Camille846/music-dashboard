@@ -7,12 +7,14 @@
     --numbers-color:#979797;
     --card-color:#FDFDFF;
     --sidebar-color:#FDFDFF;
-    --sidebar-icons-color:#DFE6F1;
+    --sidebar-icons-color:#c3c3c3;
     --hover-color:#7F7FD5;
     --logo-background:linear-gradient(120deg, #7F7FD5 0%, #E786D7 100%);;
     --logo-color: #ffff;
     --pink:#E786D7;
     --purple:#7F7FD5;
+    --sun-icon:#f0ab3b;
+    --moon-icon:#ebca46;
 
     /* Font-family */
     --heebo: 'Heebo', sans-serif;
