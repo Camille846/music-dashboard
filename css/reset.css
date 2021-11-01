@@ -16,6 +16,11 @@
     --sun-icon:#f0ab3b;
     --moon-icon:#ebca46;
     --separator-color:#EFF4F6;
+    --white:#ffffff;
+
+    /* Box-Shadows */
+    --box-shadow-1:0 7px 30px -10px rgba(150,170,180,0.5);
+    --box-shadow-2: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
 
     /* Font-family */
     --heebo: 'Heebo', sans-serif;
