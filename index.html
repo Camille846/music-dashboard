@@ -7,80 +7,102 @@
     <title>Music Dashboard</title>
     <!-- <link rel="stylesheet" href="pluggins/bootstrap/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="pluggins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/all.css">
 </head>
 <body>
-    <div class="container">
-        <nav class="nav">
-            <div class="nav__logo">
-                <a href="#" class="nav__logo-link">
-                    <span class="nav__icon logo"><i class="fas fa-music"></i></span>
+    <header class="hero">
+        <div class="hero__container">
+            <div class="listening__content">
+                <div class="listening__icon">
+                    <img src="images/Waveform.svg" alt="audio waveform">
+                </div>
+                <div class="listening__text">8 people listening you</div>
+            </div>
+            <div class="hero__info">
+                <div class="profile__group">
+                    <div class="profile__name">Camille Gomes</div>
+                    <p class="profile__description">Artist</p>
+                </div>
+                <div class="profile__img">
+                    <img src="images/profile.jpg" alt="">
+                </div>
+                <div class="profile__icon"><i class="fas fa-chevron-down chevron"></i></div>
+                <div class="separator"></div>
+                <div class="hero__info-icons">
+                    <i class="far fa-bell notification"></i>
+                    <i class="fas fa-sign-out-alt sign-out"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="nav__logo">
+            <a href="#" class="nav__logo-link">
+                <span class="nav__icon logo"><i class="fas fa-music"></i></span>
+            </a>
+        </div>
+        <ul class="nav__list">
+            <li class="nav__items">
+                <a href="" class="nav__link">
+                    <span class="nav__icon"><i class="fas fa-home"></i></span>
                 </a>
-            </div>
-            <ul class="nav__list">
-                <li class="nav__items">
-                    <a href="" class="nav__link">
-                        <span class="nav__icon"><i class="fas fa-home"></i></span>
-                    </a>
-                </li>
-                <li class="nav__items">
-                    <a href="" class="nav__link">
-                        <span class="nav__icon"><i class="fas fa-chart-line"></i></span>
-                    </a>
-                </li>
-                <li class="nav__items">
-                    <a href="" class="nav__link">
-                        <span class="nav__icon"><i class="fas fa-file"></i></span>
-                    </a>
-                </li>
-                <li class="nav__items">
-                    <a href="" class="nav__link">
-                        <span class="nav__icon"><i class="fas fa-comment-alt"></i></span>
-                    </a>
-                </li>
-            </ul>
-            <div class="nav__dark">
-                <input type="checkbox" class="checkbox" id="chk"/>
-                <label class="label" for="chk">
-                    <i class="fas fa-sun change-mode" id="sun-icon"></i>
-                    <i class="fas fa-moon change-mode" id="moon-icon"></i>
-                    <div class="ball"></div>
-                </label>
-            </div>
+            </li>
+            <li class="nav__items">
+                <a href="" class="nav__link">
+                    <span class="nav__icon"><i class="fas fa-chart-line"></i></span>
+                </a>
+            </li>
+            <li class="nav__items">
+                <a href="" class="nav__link">
+                    <span class="nav__icon"><i class="fas fa-file"></i></span>
+                </a>
+            </li>
+            <li class="nav__items">
+                <a href="" class="nav__link">
+                    <span class="nav__icon"><i class="fas fa-comment-alt"></i></span>
+                </a>
+            </li>
+        </ul>
+        <div class="nav__dark">
+            <input type="checkbox" class="checkbox" id="chk"/>
+            <label class="label" for="chk">
+                <i class="fas fa-sun change-mode" id="sun-icon"></i>
+                <i class="fas fa-moon change-mode" id="moon-icon"></i>
+                <div class="ball"></div>
+            </label>
+        </div>
 
-            <div class="nav__dark-desktop">
-                <i class="fas fa-moon change-theme" id="theme-button"></i>
-            </div>
-        </nav>
+        <div class="nav__dark-desktop">
+            <i class="fas fa-moon change-theme" id="theme-button"></i>
+        </div>
+    </nav>
+    <div class="search__content">
+        <div class="search">
+            <i class="fas fa-search search__icon"></i>
+            <input type="text" class="search__input" placeholder="Search for new music, news, artists...">
+        </div>
     </div>
-    <section class="home">
-        <header class="hero">
-            <div class="hero__container">
-                <div class="listening__content">
-                    <div class="listening__icon">
-                        <img src="images/Waveform.svg" alt="audio waveform">
+    <div class="container">
+        <div class="group-one">
+            <div class="trending__content">
+                <h1 class="trending__title">Trending</h1>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/concert1.jpg" alt="">
+                        </div>
                     </div>
-                    <div class="listening__text">8 people listening you</div>
-                </div>
-                <div class="hero__info">
-                    <div class="profile__group">
-                        <div class="profile__name">Camille Gomes</div>
-                        <p class="profile__description">Artist</p>
-                    </div>
-                    <div class="profile__img">
-                        <img src="images/profile.jpg" alt="">
-                    </div>
-                    <div class="profile__icon"><i class="fas fa-chevron-down chevron"></i></div>
-                    <div class="separator"></div>
-                    <div class="hero__info-icons">
-                        <i class="far fa-bell notification"></i>
-                        <i class="fas fa-sign-out-alt sign-out"></i>
-                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
-        </header>
-    </section>
+            <div class="artist__content">
+
+            </div>
+        </div>
+    </div>
     <script src="pluggins/fontawesome/js/all.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
