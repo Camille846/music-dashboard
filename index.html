@@ -5,13 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Dashboard</title>
-    <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="pluggins/bootstrap/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="pluggins/bootstrap/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="pluggins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/all.css">
 </head>
 <body>
+    <div class="container">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__items">
+                    <a href="#" class="nav__link">
+                        <span class="nav__icon logo"><i class="fas fa-music"></i></span>
+                    </a>
+                </li>
+                <li class="nav__items">
+                    <a href="" class="nav__link">
+                        <span class="nav__icon"><i class="fas fa-home"></i></span>
+                    </a>
+                </li>
+                <li class="nav__items">
+                    <a href="" class="nav__link">
+                        <span class="nav__icon"><i class="fas fa-chart-line"></i></span>
+                    </a>
+                </li>
+                <li class="nav__items">
+                    <a href="" class="nav__link">
+                        <span class="nav__icon"><i class="fas fa-file"></i></span>
+                    </a>
+                </li>
+                <li class="nav__items">
+                    <a href="" class="nav__link">
+                        <span class="nav__icon"><i class="fas fa-comment-alt"></i></span>
+                    </a>
+                </li>
+            </ul>
+            <div class="nav__dark">
+                <input type="checkbox" class="checkbox" id="chk"/>
+                <label class="label" for="chk">
+                    <i class="fas fa-sun change-mode" id="sun-icon"></i>
+                    <i class="fas fa-moon change-mode" id="moon-icon"></i>
+                    <div class="ball"></div>
+                </label>
+            </div>
 
-    <script src="pluggins/bootstrap/js/bootstrap.min.js"></script>
+            <div class="nav__dark-desktop">
+                <i class="fas fa-moon change-theme" id="theme-button"></i>
+            </div>
+        </nav>
+    </div>
+    <!-- <script src="pluggins/bootstrap/js/bootstrap.min.js"></script> -->
     <script src="pluggins/fontawesome/js/all.min.js"></script>
     <script src="js/main.js"></script>
 </body>
