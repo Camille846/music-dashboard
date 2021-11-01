@@ -15,6 +15,7 @@
     --purple:#7F7FD5;
     --sun-icon:#f0ab3b;
     --moon-icon:#ebca46;
+    --separator-color:#EFF4F6;
 
     /* Font-family */
     --heebo: 'Heebo', sans-serif;
@@ -25,7 +26,7 @@
     --h2-font-size: 1.25rem;
     --h3-font-size: 1rem;
     --normal-font-size: .938rem;
-    --small-font-size: .813rem;
+    --small-font-size: .875rem;
     --smaller-font-size: .75rem;
 
     /* Font weight */
@@ -51,10 +52,12 @@
 }
 
 body{
+    width: 100%;
     min-height: 100vh;
+    height: 100%;
     background-color: var(--body-color);
     color: var(--text-color);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 body.dark{
@@ -100,4 +103,3 @@ button{
     font-family: var(--heebo);
     font-size: var(--normal-font-size);
 }
-
