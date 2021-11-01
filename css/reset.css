@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;900&display=swap');
 
 :root{
     /* Colors */
-    --body-color: #FDFDFF;
+    --body-color: #EFF3F9;
     --text-color:#4F4F4F;
     --numbers-color:#979797;
-    --card-color:#EBEBEB;
-    --sidebar-color:#EBEBEB;
+    --card-color:#FDFDFF;
+    --sidebar-color:#FDFDFF;
     --sidebar-icons-color:#DFE6F1;
     --hover-color:#7F7FD5;
+    --logo-background:linear-gradient(120deg, #7F7FD5 0%, #E786D7 100%);;
+    --logo-color: #ffff;
     --pink:#E786D7;
     --purple:#7F7FD5;
 
@@ -46,6 +48,13 @@
     --mb-3:3rem;
 }
 
+body{
+    min-height: 100vh;
+    background-color: var(--body-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
 body.dark{
     --body-color: #212427;
     --text-color:#CACACA;
@@ -65,11 +74,6 @@ body.dark{
     font-family: var(--heebo);
 }
 
-body{
-    min-height: 100vh;
-    background-color: var(--body-color);
-    color: var(--text-color);
-}
 
 a{
     text-decoration: none;
@@ -94,3 +98,4 @@ button{
     font-family: var(--heebo);
     font-size: var(--normal-font-size);
 }
+
