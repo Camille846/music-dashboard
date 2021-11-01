@@ -12,12 +12,12 @@
 <body>
     <div class="container">
         <nav class="nav">
+            <div class="nav__logo">
+                <a href="#" class="nav__logo-link">
+                    <span class="nav__icon logo"><i class="fas fa-music"></i></span>
+                </a>
+            </div>
             <ul class="nav__list">
-                <li class="nav__items">
-                    <a href="#" class="nav__link">
-                        <span class="nav__icon logo"><i class="fas fa-music"></i></span>
-                    </a>
-                </li>
                 <li class="nav__items">
                     <a href="" class="nav__link">
                         <span class="nav__icon"><i class="fas fa-home"></i></span>
@@ -53,7 +53,33 @@
             </div>
         </nav>
     </div>
-    <!-- <script src="pluggins/bootstrap/js/bootstrap.min.js"></script> -->
+    <section class="home">
+        <header class="hero">
+            <div class="hero__container">
+                <div class="listening__content">
+                    <div class="listening__icon">
+                        <img src="images/Waveform.svg" alt="audio waveform">
+                    </div>
+                    <div class="listening__text">8 people listening you</div>
+                </div>
+                <div class="hero__info">
+                    <div class="profile__group">
+                        <div class="profile__name">Camille Gomes</div>
+                        <p class="profile__description">Artist</p>
+                    </div>
+                    <div class="profile__img">
+                        <img src="images/profile.jpg" alt="">
+                    </div>
+                    <div class="profile__icon"><i class="fas fa-chevron-down chevron"></i></div>
+                    <div class="separator"></div>
+                    <div class="hero__info-icons">
+                        <i class="far fa-bell notification"></i>
+                        <i class="fas fa-sign-out-alt sign-out"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
     <script src="pluggins/fontawesome/js/all.min.js"></script>
     <script src="js/main.js"></script>
 </body>
