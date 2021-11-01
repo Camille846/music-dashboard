@@ -1,12 +1,9 @@
-.container{
-    position: relative;
-    width: 100%;
-}
-
 .nav{
     background-color:var(--sidebar-color);
-    box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
+    box-shadow: var(--box-shadow-1);
     position: fixed;
+    top: 0;
+    left: 0;
     width: 98px;
     height: 100%;
     transition: .5s;
