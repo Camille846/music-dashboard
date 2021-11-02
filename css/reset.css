@@ -17,6 +17,7 @@
     --moon-icon:#ebca46;
     --separator-color:#EFF4F6;
     --white:#ffffff;
+    --svg-filter: invert(28%) sepia(15%) saturate(19%) hue-rotate(354deg) brightness(96%) contrast(84%);
 
     /* Box-Shadows */
     --box-shadow-1:0 7px 30px -10px rgba(150,170,180,0.5);
@@ -67,7 +68,7 @@ body{
     /* overflow-x: hidden; */
 }
 
-body.dark{
+body.dark-theme{
     --body-color: #212427;
     --text-color:#CACACA;
     --numbers-color:#979797;
@@ -77,6 +78,7 @@ body.dark{
     --hover-color:#7F7FD5;
     --pink:#E786D7;
     --purple:#7F7FD5;
+    --svg-filter: invert(100%) sepia(0%) saturate(54%) hue-rotate(334deg) brightness(116%) contrast(100%);
 }
 
 *{
