@@ -36,6 +36,10 @@
     font-weight: var(--semi-bold);
 }
 
+.filter{
+    filter: var(--svg-filter);
+}
+
 .hero__info{
     display: flex;
     flex-direction: row;
