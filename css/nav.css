@@ -39,7 +39,7 @@
 .nav__logo{
     position: absolute;
     left:1.5rem;
-    top:1rem;
+    top:1.5rem;
     pointer-events: none;
     width: 40px;
     height: 40px;
