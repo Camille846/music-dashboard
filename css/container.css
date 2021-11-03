@@ -8,7 +8,7 @@
 }
 
 .search{
-    background-color: var(--white);
+    background-color: var(--search-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,6 +24,7 @@
     padding-left: 1rem;
     font-size: var(--h3-font-size);
     color: var(--text-color);
+    background-color: var(--search-color);
 }
 
 .search__input::placeholder{
