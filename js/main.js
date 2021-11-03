@@ -8,40 +8,30 @@ let swiper = new Swiper(".mySwiper", {
 });
 
 // Light/Dark Mode Theme
-
 const chk = document.getElementById('chk')
+if(chk) {
+  initTheme(); // on page load, if user has already selected a specific theme -> apply it
 
-chk.addEventListener('click', ()=>{
-    document.body.classList.toggle('dark-theme');
-})
+  chk.addEventListener('change', function(event){
+    resetTheme(); // update color theme
+  });
 
-//DARK LIGHT THEME TOGGLE FOR DESKTOP (BUTTON)
-const themeButton = document.getElementById('theme-button')
-const darkTheme = 'dark-theme'
-const iconTheme = 'fa-sun'
+  function initTheme() {
+    let darkThemeSelected = (localStorage.getItem('chk') !== null && localStorage.getItem('chk') === 'dark');
+    // update checkbox
+    chk.checked = darkThemeSelected;
+    // update body data-theme attribute
+    darkThemeSelected ?  document.body.classList.add('dark-theme') : document.body.classList.remove('dark-theme');
+  };
 
-// Previously selected topic (if user selected)
-const selectedTheme = localStorage.getItem('selected-theme')
-const selectedIcon = localStorage.getItem('selected-icon')
-
-// We obtain the current theme that the interface has by validating the dark-theme class
-const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
-const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'fa-moon' : 'fa-sun'
-
-// We validate if the user previously chose a topic
-if (selectedTheme) {
-  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-  themeButton.classList[selectedIcon === 'fa-moon' ? 'add' : 'remove'](iconTheme)
+  function resetTheme() {
+    if(chk.checked) { // dark theme has been selected
+      document.body.classList.add('dark-theme');
+      localStorage.setItem('chk', 'dark'); // save theme selection 
+    } else {
+      document.body.classList.remove('dark-theme');
+      localStorage.removeItem('chk'); // reset theme selection 
+    } 
+  };
 }
 
-// Activate / deactivate the theme manually with the button
-themeButton.addEventListener('click', () => {
-  // Add or remove the dark / icon theme
-  document.body.classList.toggle(darkTheme)
-  themeButton.classList.toggle(iconTheme)
-
-  // We save the theme and the current icon that the user chose
-  localStorage.setItem('selected-theme', getCurrentTheme())
-  localStorage.setItem('selected-icon', getCurrentIcon())
-})
