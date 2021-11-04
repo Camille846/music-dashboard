@@ -204,3 +204,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 .album__link:hover{
     color: var(--pink);
 }
+
+.selected{
+    background-color: var(--selected-color);
+}
