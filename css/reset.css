@@ -4,6 +4,7 @@
     /* Colors */
     --body-color: #EFF3F9;
     --text-color:#4F4F4F;
+    --light-text-color: rgba(79, 79, 79,.7);
     --numbers-color:#979797;
     --card-color:#FDFDFF;
     --sidebar-color:#FDFDFF;
@@ -11,7 +12,7 @@
     --hover-color:#7F7FD5;
     --logo-background:linear-gradient(120deg, #7F7FD5 0%, #E786D7 100%);;
     --logo-color: #ffff;
-    --pink:#E786D7;
+    --pink:#df6ecc;
     --purple:#7F7FD5;
     --sun-icon:#f0ab3b;
     --moon-icon:#ebca46;
@@ -29,6 +30,7 @@
     --source-sans:'Source Sans Pro', sans-serif;
 
     /* Font-size */
+    --extra-big-font-size:3.125rem;
     --biggest-font-size:2.5rem;
     --large-font-size:1.75rem;
     --h1-font-size: 1.5rem;
@@ -39,7 +41,6 @@
     --smaller-font-size: .75rem;
 
     /* Font weight */
-    --medium:500;
     --semi-bold:600;
     --bold:700;
     --black:900;
@@ -72,6 +73,7 @@ body{
 body.dark-theme{
     --body-color: #212427;
     --text-color:#CACACA;
+    --light-text-color: rgba(202, 202, 202,.7);
     --numbers-color:#979797;
     --card-color:#282C31;
     --sidebar-color:#282C31;
