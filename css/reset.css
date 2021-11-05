@@ -9,6 +9,7 @@
     --card-color:#FDFDFF;
     --sidebar-color:#FDFDFF;
     --sidebar-icons-color:#c3c3c3;
+    --selected-color:#FDFDFF;
     --hover-color:#7F7FD5;
     --logo-background:linear-gradient(120deg, #7F7FD5 0%, #E786D7 100%);;
     --logo-color: #ffff;
@@ -77,6 +78,7 @@ body.dark-theme{
     --numbers-color:#979797;
     --card-color:#282C31;
     --sidebar-color:#282C31;
+    --selected-color:#282C31;
     --sidebar-icons-color:#CACACA;
     --hover-color:#7F7FD5;
     --pink:#E786D7;
