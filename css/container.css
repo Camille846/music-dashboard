@@ -177,12 +177,17 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
    margin-top: var(--mb-0-25);
 }
 
+.table-row{
+    cursor: pointer;
+}
+
 .table-row td{
     padding: 1rem;
 }
 
 .track-title{
     font-weight: var(--semi-bold);
+    cursor: text;
 }
 
 .track-listeners{
@@ -226,6 +231,8 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     height: 136px;
     border-radius: 10px;
     position: relative;
+    text-shadow: 1px 1px 2px #212121;
+    cursor: pointer;
     
 }
 
