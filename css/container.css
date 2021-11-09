@@ -269,7 +269,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 
 .tabs__wrap input:checked+label {
-    border: 2px solid #2261c5;
+    border: 3px solid var(--purple);
 }
 
 .genres__profile{
