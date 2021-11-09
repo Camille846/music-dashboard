@@ -263,25 +263,60 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 .tabs__wrap{
     display: flex;
-    
     margin-top: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
-.tabs__input{
+
+.tabs__wrap input:checked+label {
+    border: 2px solid #2261c5;
+}
+
+.genres__profile{
+    animation: opacity 2s;
+
+}
+
+@keyframes opacity{
+    0%{
+        margin-top: -20px;
+        opacity: 0;
+    }
+
+    100%{
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+/* genres changing */
+
+#blues_container {
     display: flex;
 }
 
-.tabs__input input{
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
+#sertanejo_container {
+    display: none;
 }
 
-.tabs__input input:checked ~ label{
-    background: red !important;
+#metal_container {
+    display: none;
+}
+
+#country_container {
+    display: none;
+}
+
+#soul_container {
+    display: none;
+}
+
+#eletronic_container {
+    display: none;
+}
+
+#hip_hop_container {
+    display: none;
 }
 
 .data-tabs{
