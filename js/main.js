@@ -35,3 +35,83 @@ if(chk) {
   };
 }
 
+// CHANGE PROFILE LIST ON POPULAR GENRES
+const blues_button = document.getElementById('blues');
+blues_button.checked = true;
+const blues_container = document.getElementById('blues_container');
+const sertanejo_button = document.getElementById('sertanejo');
+const sertanejo_container = document.getElementById('sertanejo_container');
+const metal_button = document.getElementById('metal');
+const metal_container = document.getElementById('metal_container');
+const country_button = document.getElementById('country');
+const country_container = document.getElementById('country_container');
+const soul_button = document.getElementById('soul');
+const soul_container = document.getElementById('soul_container');
+const eletronic_button = document.getElementById('eletronic');
+const eletronic_container = document.getElementById('eletronic_container');
+const hip_hop_button = document.getElementById('hip_hop');
+const hip_hop_container = document.getElementById('hip_hop_container');
+
+
+// click event 
+window.addEventListener("click", function(event) {
+
+    if(event.target == blues_button) {
+        sertanejo_container.style.display = "none";
+        metal_container.style.display = "none";
+        country_container.style.display = "none";
+        soul_container.style.display = "none";
+        eletronic_container.style.display = "none";
+        hip_hop_container.style.display = "none";
+        blues_container.style.display = "flex";
+    } else if (event.target == sertanejo_button) {
+        blues_container.style.display = "none";
+        metal_container.style.display = "none";
+        country_container.style.display = "none";
+        soul_container.style.display = "none";
+        eletronic_container.style.display = "none";
+        hip_hop_container.style.display = "none";
+        sertanejo_container.style.display = "flex";
+    } else if (event.target == metal_button) {
+        blues_container.style.display = "none";
+        sertanejo_container.style.display = "none";
+        country_container.style.display = "none";
+        soul_container.style.display = "none";
+        eletronic_container.style.display = "none";
+        hip_hop_container.style.display = "none";
+        metal_container.style.display = "flex";
+    } else if (event.target == country_button) {
+        blues_container.style.display = "none";
+        sertanejo_container.style.display = "none";
+        metal_container.style.display = "none";
+        soul_container.style.display = "none";
+        eletronic_container.style.display = "none";
+        hip_hop_container.style.display = "none";
+        country_container.style.display = "flex";
+    } else if (event.target == soul_button) {
+        blues_container.style.display = "none"; 
+        sertanejo_container.style.display = "none";
+        metal_container.style.display = "none";
+        country_container.style.display = "none";
+        eletronic_container.style.display = "none";
+        hip_hop_container.style.display = "none";
+        soul_container.style.display = "flex";
+    } else if (event.target == eletronic_button) {
+        blues_container.style.display = "none";
+        sertanejo_container.style.display = "none";
+        metal_container.style.display = "none";
+        country_container.style.display = "none";
+        soul_container.style.display = "none";
+        hip_hop_container.style.display = "none";
+        eletronic_container.style.display = "flex";
+    } else if (event.target == hip_hop_button) {
+        blues_container.style.display = "none";
+        sertanejo_container.style.display = "none";
+        metal_container.style.display = "none";
+        country_container.style.display = "none";
+        soul_container.style.display = "none";
+        eletronic_container.style.display = "none";
+        hip_hop_container.style.display = "flex";
+    } 
+});
+
