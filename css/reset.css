@@ -122,3 +122,15 @@ button{
     font-family: var(--heebo);
     font-size: var(--normal-font-size);
 }
+
+@media screen and (min-width: 992px) {
+    :root{
+        --biggest-font-size:4rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+}   
