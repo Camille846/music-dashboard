@@ -2,7 +2,7 @@
 
 > status: Developing ⚠️
 
- I started to develop a <a href="https://camille846.github.io/Responsive-Halloween-Website/">Responsive Halloween Themed Website </a> Design as a creative learning process to improve my CSS and Javascript skills. 
+ I am developing a music Dashboard Design as a creative learning process to improve my CSS and Javascript skills. 
  
  ## Table of contents
 
