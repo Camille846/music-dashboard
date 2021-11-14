@@ -1,0 +1,30 @@
+@import 'reset.css';
+@import 'nav.css';
+@import 'header.css';
+
+.dashboard__container{
+    width: 75%;
+    margin-top: 10rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dashboard__group-one{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container-title{
+    color: var(--text-color);
+    font-weight: var(--bold);
+    font-size: var(--h1-font-size);
+}
+
+.container-subtitle{
+    color: var(--light-text-color);
+    font-size: var(--normal-font-size);
+    column-gap: 2rem;
+}
