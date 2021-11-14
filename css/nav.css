@@ -134,3 +134,13 @@
     cursor: pointer;
     font-size: 1rem;
 }
+
+@media screen and (max-width:767px){
+    .nav{
+        position: fixed;
+        display: none;
+        transition: all .6s;
+        animation:  from_left .5s;
+    }
+
+}
