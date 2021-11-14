@@ -44,7 +44,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* background-color: blueviolet; */
 }
 
 .group-one, .group-two{
@@ -648,13 +647,26 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 /* ----------- Galaxy Tab 2 ----------- */
 
 /* Portrait and Landscape */
-@media 
-  (min-device-width: 800px) 
-  and (max-device-width: 1280px) {
+@media (min-width: 800px) and (max-width: 1280px) {
     .container{
       margin-left: 100px;
-      background-color: blueviolet;
+      width: 90%;
+      /* background-color: blueviolet; */
     }
+
+    
+    .search{
+      background-color: var(--search-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 1rem;
+      height: 50px;
+      width: 700px;
+      border-radius: 50px;
+      box-shadow: var(--box-shadow-2);
+    }
+
     .group-one, .group-two{
       flex-direction: column;
       justify-content: flex-start;
@@ -727,11 +739,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
       margin-top: 20px;
       margin-bottom: 30px;
   }
-
-  .album__table{
-    overflow-x:auto
-  }
-
   .table-row{
     font-size: 11px;
   }
@@ -780,4 +787,20 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 2) { 
 
+}
+
+@media (max-width:1880px) {
+  .swiper {
+      width: 600px;
+      height: 493px;
+      border-radius: 20px;
+  }
+  
+  .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: relative;
+  }
 }
