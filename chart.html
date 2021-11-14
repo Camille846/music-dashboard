@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Dashboard</title>
+    <!-- <link rel="stylesheet" href="pluggins/bootstrap/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="pluggins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/chart.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="menu">
+			<div class="menu-burger" id="menu-burger"></div>
+		</div>
+        <div class="hero__container">
+            <div class="listening__content" id="listening__content">
+                <div class="listening__icon">
+                    <img src="images/Waveform.svg" alt="audio waveform" class="filter">
+                </div>
+                <div class="listening__text">8 <span>people listening you</span></div>
+            </div>
+            <div class="hero__info">
+                <div class="profile__group">
+                    <div class="profile__name">Camille Gomes</div>
+                    <p class="profile__description">Artist</p>
+                </div>
+                <div class="profile__img">
+                    <img src="images/profile.jpg" alt="">
+                </div>
+                <div class="profile__icon"><i class="fas fa-chevron-down chevron"></i></div>
+                <div class="separator"></div>
+                <div class="hero__info-icons">
+                    <i class="far fa-bell notification"></i>
+                    <i class="fas fa-sign-out-alt sign-out"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="nav__logo">
+            <a href="#" class="nav__logo-link">
+                <span class="nav__icon logo"><i class="fas fa-music"></i></span>
+            </a>
+        </div>
+        <ul class="nav__list">
+            <li class="nav__items">
+                <a href="index.html" class="nav__link">
+                    <span class="nav__icon"><i class="fas fa-home"></i></span>
+                </a>
+            </li>
+            <li class="nav__items">
+                <a href="chart.html" class="nav__link">
+                    <span class="nav__icon"><i class="fas fa-chart-line"></i></span>
+                </a>
+            </li>
+            <li class="nav__items">
+                <a href="" class="nav__link">
+                    <span class="nav__icon"><i class="fas fa-file"></i></span>
+                </a>
+            </li>
+            <li class="nav__items">
+                <a href="" class="nav__link">
+                    <span class="nav__icon"><i class="fas fa-comment-alt"></i></span>
+                </a>
+            </li>
+        </ul>
+        <div class="nav__dark">
+            <input type="checkbox" class="checkbox" id="chk"/>
+            <label class="label" for="chk">
+                <i class="fas fa-sun change-mode" id="sun-icon"></i>
+                <i class="fas fa-moon change-mode" id="moon-icon"></i>
+                <div class="ball"></div>
+            </label>
+        </div>
+        <i class="ri-close-fill nav__close" id="nav-close"></i>
+        <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-fill"></i>
+        </div>
+    </nav>
+    <div class="dashboard__container">
+        <div class="dashboard__group-one">
+            <div class="container-title">Dashboard</div>
+            <div class="container-subtitle">My new amazing album <span><i class="fas fa-chevron-down"></i></span></div>
+            <div class="container-btns">
+                <div class="add-btn">
+                    <span class="plus"><i class="fas fa-plus"></i></span>
+                    <div class="add-text">New dashboard</div>
+                </div>
+                <div class="more-btn">
+                    <div class="config-btn">
+                        <div class="config-icon"><i class="fas fa-cog"></i></div>
+                    </div>
+                    <div class="filter-btn">
+                        <div class="filter-text">Last 7 days</div>
+                        <span class="filter-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="download-btn">
+                        <div class="download-icon"><i class="fas fa-download"></i></div>
+                        <div class="download-text">Download as CSV</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="pluggins/fontawesome/js/all.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
