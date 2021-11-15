@@ -5,7 +5,7 @@ $menu.addEventListener('click', function(){
 	if(!menuOpen){
 		$menu.classList.add('open');
     $nav.style.display = 'flex';
-    document.getElementById('menu-burger').style.marginLeft = '200px';
+    document.getElementById('menu-burger').style.marginLeft = '150px';
     document.getElementById('listening__content').style.marginLeft = '50px';
 		menuOpen = true;
 	}
