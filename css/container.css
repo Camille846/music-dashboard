@@ -389,6 +389,18 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     border-radius: 50%;
 }
 
+@media (max-width:374px){
+    .swiper, .artist__img{
+        width: 280px;
+    }
+
+    .tabs__wrap{
+        grid-template-columns: 280px;
+    }
+
+    
+}
+
 @media (min-width:1281px){
   .search{
     max-width: 850px;
@@ -447,11 +459,25 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   }
 
   
-  .tabs__wrap{
+  /* .tabs__wrap{
     display: flex;
     margin-top: 20px;
     margin-bottom: 30px;
-  }
+  } */
+
+  
+    .tabs__wrap{
+        /* display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap; */
+        display: grid;
+        grid-template-columns: repeat(7, 120px);
+        grid-gap:1rem;
+        margin-bottom: var(--mb-2);
+    }
+
 
 
   .genres__profile{
@@ -459,11 +485,20 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
       
   }
 
-  .genres__profile ul{
+  /* .genres__profile ul{
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-  }
+  } */
+
+  .genres__profile ul{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+
 
   .data-tabs{
       border: 2px solid var(--black-color);
