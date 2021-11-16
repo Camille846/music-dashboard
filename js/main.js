@@ -83,7 +83,7 @@ window.addEventListener("click", function(event) {
         soul_container.style.display = "none";
         eletronic_container.style.display = "none";
         hip_hop_container.style.display = "none";
-        blues_container.style.display = "flex";
+        blues_container.style.display = "grid";
     } else if (event.target == sertanejo_button) {
         blues_container.style.display = "none";
         metal_container.style.display = "none";
@@ -91,7 +91,7 @@ window.addEventListener("click", function(event) {
         soul_container.style.display = "none";
         eletronic_container.style.display = "none";
         hip_hop_container.style.display = "none";
-        sertanejo_container.style.display = "flex";
+        sertanejo_container.style.display = "grid";
     } else if (event.target == metal_button) {
         blues_container.style.display = "none";
         sertanejo_container.style.display = "none";
@@ -99,7 +99,7 @@ window.addEventListener("click", function(event) {
         soul_container.style.display = "none";
         eletronic_container.style.display = "none";
         hip_hop_container.style.display = "none";
-        metal_container.style.display = "flex";
+        metal_container.style.display = "grid";
     } else if (event.target == country_button) {
         blues_container.style.display = "none";
         sertanejo_container.style.display = "none";
@@ -107,7 +107,7 @@ window.addEventListener("click", function(event) {
         soul_container.style.display = "none";
         eletronic_container.style.display = "none";
         hip_hop_container.style.display = "none";
-        country_container.style.display = "flex";
+        country_container.style.display = "grid";
     } else if (event.target == soul_button) {
         blues_container.style.display = "none"; 
         sertanejo_container.style.display = "none";
@@ -115,7 +115,7 @@ window.addEventListener("click", function(event) {
         country_container.style.display = "none";
         eletronic_container.style.display = "none";
         hip_hop_container.style.display = "none";
-        soul_container.style.display = "flex";
+        soul_container.style.display = "grid";
     } else if (event.target == eletronic_button) {
         blues_container.style.display = "none";
         sertanejo_container.style.display = "none";
@@ -123,7 +123,7 @@ window.addEventListener("click", function(event) {
         country_container.style.display = "none";
         soul_container.style.display = "none";
         hip_hop_container.style.display = "none";
-        eletronic_container.style.display = "flex";
+        eletronic_container.style.display = "grid";
     } else if (event.target == hip_hop_button) {
         blues_container.style.display = "none";
         sertanejo_container.style.display = "none";
@@ -131,7 +131,7 @@ window.addEventListener("click", function(event) {
         country_container.style.display = "none";
         soul_container.style.display = "none";
         eletronic_container.style.display = "none";
-        hip_hop_container.style.display = "flex";
+        hip_hop_container.style.display = "grid";
     } 
 });
 
