@@ -365,7 +365,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 .item__wrap{
     background: transparent;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
@@ -391,7 +393,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 @media (max-width:374px){
     .swiper, .artist__img{
-        width: 280px;
+        max-width: 280px;
     }
 
     .tabs__wrap{
@@ -401,7 +403,70 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     
 }
 
-@media (min-width:1281px){
+@media (max-width:425px){
+    .swiper, .artist__img{
+        width: 386px;
+    }
+
+    .tabs__wrap{
+        grid-template-columns: repeat(3, minmax(3vw, 120px));
+    }
+}
+
+@media (min-width:470px){
+    .swiper, .artist__img{
+        width: 430px;
+    }
+
+    .tabs__wrap{
+        grid-template-columns: repeat(3, minmax(3vw, 120px));
+    }
+
+    .genres__profile ul{
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;
+    }
+
+    
+}
+
+@media (min-width:768px){
+    .swiper, .artist__img{
+        width: 700px;
+    }
+
+    .tabs__wrap{
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    .genres__profile ul{
+        grid-template-columns: repeat(6,1fr);
+    }
+}
+
+@media (min-width:1024px){
+    .container{
+        margin-left: 50px;
+      }
+    
+    .swiper, .artist__img{
+        width: 58rem;
+    }
+
+    .tabs__wrap{
+        grid-template-columns: repeat(7, 1fr);
+        gap: 2rem;
+    }
+
+    .genres__profile ul{
+        grid-template-columns: repeat(6,1fr);
+    }
+
+   
+    
+}
+
+@media (min-width:1224px){
   .search{
     max-width: 850px;
   }
@@ -418,7 +483,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
   
   .swiper {
-    width: 870px;
+    width: 45rem;
   }
 
   .artist__content{
@@ -473,7 +538,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
         gap: 1rem;
         flex-wrap: wrap; */
         display: grid;
-        grid-template-columns: repeat(7, 120px);
+        grid-template-columns: repeat(7, 1fr);
         grid-gap:1rem;
         margin-bottom: var(--mb-2);
     }
@@ -515,7 +580,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   .item__wrap{
       background: transparent;
       text-align: center;
-      padding-right: 3rem;
   }
 
   .item{
