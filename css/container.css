@@ -1,6 +1,6 @@
 .search__content{
     margin-top: 150px;
-    margin-left: 150px;
+    margin-left: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,7 +14,7 @@
     align-items: center;
     padding: 1.5rem 1.5rem;
     height: 65px;
-    width: 850px;
+    width: 80%;
     border-radius: 50px;
     box-shadow: var(--box-shadow-2);
 }
@@ -37,20 +37,20 @@
     cursor: pointer;
 }
 
+
 .container{
-    width: 91%;
-    margin-top: var(--mb-2);
-    margin-left: 159px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  width: 91%;
+  margin: var(--mb-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .group-one, .group-two{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-self: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     column-gap: 2rem;
     margin-bottom: var(--mb-2);
 }
@@ -62,9 +62,9 @@
 }
 
 .swiper {
-    width: 870px;
-    height: 493px;
-    border-radius: 20px;
+  width: 350px;
+  height: 493px;
+  border-radius: 20px;
 }
 
 .swiper-slide img {
@@ -86,8 +86,8 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 .swiper__content{
     position: absolute;
-    top: 60%;
-    left: 50px;
+    top: 50%;
+    left: 30px;
     color: var(--white);
 }
 
@@ -118,26 +118,26 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 .artist__content{
     display: flex;
     flex-direction: column;
+    padding-top: 2rem;
 }
 
 .artist__box{
     display: flex;
-    flex-direction: row;
-    column-gap: 2rem;
+    flex-direction: column;
+    row-gap: 2rem;
 }
 
 .artist__content-left{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     column-gap: 2rem;
     justify-content: flex-start;
-    align-self: flex-start;
 }
 
 .artist__img{
     display: block;
     border-radius: 10px;
-    width: 226px;
+    width: 350px;
     height: 493px;
     object-fit: cover;
 }
@@ -193,6 +193,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 .track-listeners{
     text-align: center;
+    display: none;
 }
 
 .thumbs-up, .track-download, .track-share, .track-more{
@@ -228,18 +229,17 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 
 .card-item{
-    width: 275px;
-    height: 136px;
-    border-radius: 10px;
-    position: relative;
-    text-shadow: 1px 1px 2px #212121;
-    cursor: pointer;
-    
+  width: 100%;
+  height: 136px;
+  border-radius: 10px;
+  position: relative;
+  text-shadow: 1px 1px 2px #212121;
+  cursor: pointer;
+  
 }
 
 .span-2{
-    width: 573px;
-    grid-column: span 2;
+  grid-column: span 2;
 }
 
 .news__image{
@@ -263,9 +263,15 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 
 .tabs__wrap{
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-gap:1rem;
+    margin-bottom: var(--mb-2);
 }
 
 
@@ -273,15 +279,29 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     border: 3px solid var(--purple);
 }
 
+.genres__content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .genres__profile{
     animation: opacity 2s;
     
 }
 
+
 .genres__profile ul{
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: space-between;
+    column-gap: 1rem; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
 }
 
 @keyframes opacity{
@@ -299,7 +319,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 /* genres changing */
 
 #blues_container {
-    display: flex;
+    display: grid;
 }
 
 #sertanejo_container {
@@ -328,14 +348,13 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 .data-tabs{
     border: 2px solid var(--black-color);
-    padding:1rem 1.5rem;
-    margin-bottom: 40px;
-    margin-right: 1rem;
+    padding:1rem;
+    /* margin-bottom: 40px; */
     border-radius: 15px;
     background: var(--card-color);
     color: var(--text-color);
     cursor: pointer;
-
+    text-align: center;
 }
 
 .data-tabs:hover{
@@ -347,12 +366,12 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 .item__wrap{
     background: transparent;
     text-align: center;
-    padding-right: 3rem;
+
 }
 
 .item{
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     margin-bottom: .5rem;
     cursor: pointer;
@@ -370,437 +389,107 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     border-radius: 50%;
 }
 
-/* ----------- Non-Retina Screens ----------- */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-
-}
-
-/* ----------- Retina Screens ----------- */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) { 
-}
-
-/* ----------- iPhone 4 and 4S ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-
-}
-
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-
-}
-
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) { 
-
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) { 
-
-}
-
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
-
-}
-
-/* ----------- iPhone X ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
-
-}
-
-/* ----------- iPad 1, 2, Mini and Air ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-}
-
-/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* ----------- iPad Pro 10.5" ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 834px) 
-  and (max-device-width: 1112px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Portrait */
-/* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media only screen 
-  and (min-device-width: 834px) 
-  and (max-device-width: 834px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Landscape */
-/* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media only screen 
-  and (min-device-width: 1112px) 
-  and (max-device-width: 1112px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* ----------- iPad Pro 12.9" ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1366px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Portrait */
-/* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Landscape */
-/* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media only screen 
-  and (min-device-width: 1366px) 
-  and (max-device-width: 1366px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* ----------- Galaxy Tab 2 ----------- */
-
-/* Portrait and Landscape */
-@media (min-width: 800px) and (max-width: 1280px) {
-    .container{
-      margin-left: 100px;
-      width: 90%;
-      /* background-color: blueviolet; */
-    }
-
-    
-    .search{
-      background-color: var(--search-color);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 1rem 1rem;
-      height: 50px;
-      width: 700px;
-      border-radius: 50px;
-      box-shadow: var(--box-shadow-2);
-    }
-
-    .group-one, .group-two{
-      flex-direction: column;
-      justify-content: flex-start;
-      align-self: flex-start;
-      column-gap: 2rem;
-      margin-bottom: var(--mb-2);
-    }
-
-    .swiper {
-      max-width: 80%;
-      height: 493px;
-      border-radius: 20px;
-    }
-
-    .artist__box{
-      flex-direction: column;
-      row-gap: 2rem;
-    }
-
-    .artist__content-left{
-      flex-direction: column;
-      row-gap: 2rem;
-    }
-
-    .artist__subtitle{
-      text-transform: uppercase;
-      font-weight: var(--semi-bold);
-      font-size: 12px;
-      font-family: var(--source-sans);
-      margin-bottom: var(--mb-0-25);
-    }
-
-    .artist__title{
-        font-weight: var(--bold);
-        font-size: var(--biggest-font-size);
-    }
-    
-    .artist__name, .artist__description{
-        color: var(--light-text-color);
-        margin-bottom: var(--mb-0-25);
-    }
-
-    .artist__name{
-        font-weight: var(--semi-bold);
-        font-size: var(--h1-font-size);
-    }
-
-    .artist__description{
-      font-size: var(--normal-font-size);
-        line-height: 1.5rem;
-    }
-
-    .news__card{
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-      gap: 1rem;
-    }
-
-    .card-item{
-      width: 400px;
-      grid-column: span 2;
-
-    }
-
-    .span-2{
-      width: 400px;
-    }
-    .tabs__wrap{
-      display: flex;
-      margin-top: 20px;
-      margin-bottom: 30px;
-  }
-  .table-row{
-    font-size: 11px;
-  }
-  .table-row td{
-    padding: .5rem;
+@media (min-width:1281px){
+  .search{
+    max-width: 850px;
   }
 
-
-}
-
-/* Portrait */
-@media 
-  (max-device-width: 800px) 
-  and (orientation: portrait) { 
-
-}
-
-/* Landscape */
-@media 
-  (max-device-width: 1280px) 
-  and (orientation: landscape) { 
-
-}
-
-/* ----------- Galaxy Tab S ----------- */
-
-/* Portrait and Landscape */
-@media 
-  (min-device-width: 800px) 
-  and (max-device-width: 1280px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Portrait */
-@media 
-  (max-device-width: 800px) 
-  and (orientation: portrait)
-  and (-webkit-min-device-pixel-ratio: 2) { 
-
-}
-
-/* Landscape */
-@media 
-  (max-device-width: 1280px) 
-  and (orientation: landscape)
-  and (-webkit-min-device-pixel-ratio: 2) { 
-
-}
-
-@media (max-width:1880px) {
-  .swiper {
-      width: 600px;
-      height: 493px;
-      border-radius: 20px;
+  .container{
+    margin-left: 159px;
   }
+
+  .group-one, .group-two{
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
   
-  .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      position: relative;
+  .swiper {
+    width: 870px;
   }
+
+  .artist__content{
+    flex-direction: column;
+    padding-top: 0;
+  }
+
+  .artist__box{
+      flex-direction: row;
+      column-gap: 2rem;
+  }
+
+  .artist__content-left{
+      flex-direction: row;
+  }
+
+  .artist__img{
+    width: 226px;
+  }
+
+  .track-listeners{
+    display: block;
+}
+
+  .card-item{
+    width: 275px;
+    height: 136px;
+    border-radius: 10px;
+    position: relative;
+    text-shadow: 1px 1px 2px #212121;
+    cursor: pointer;
+    
+  }
+
+  .span-2{
+      width: 573px;
+      grid-column: span 2;
+  }
+
+  
+  .tabs__wrap{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+
+  .genres__profile{
+      animation: opacity 2s;
+      
+  }
+
+  .genres__profile ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .data-tabs{
+      border: 2px solid var(--black-color);
+      padding:1rem 1.5rem;
+      margin-bottom: 40px;
+      border-radius: 15px;
+      background: var(--card-color);
+      color: var(--text-color);
+      cursor: pointer;
+
+  }
+
+
+  .item__wrap{
+      background: transparent;
+      text-align: center;
+      padding-right: 3rem;
+  }
+
+  .item{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: .5rem;
+      cursor: pointer;
+      border: 1px solid var(--white);
+  }
+
 }
