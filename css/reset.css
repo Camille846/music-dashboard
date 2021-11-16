@@ -33,8 +33,8 @@
     --source-sans:'Source Sans Pro', sans-serif;
 
     /* Font-size */
-    --extra-big-font-size:3.125rem;
-    --biggest-font-size:2.5rem;
+    --extra-big-font-size:2.4rem;
+    --biggest-font-size:2rem;
     --large-font-size:1.75rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
@@ -70,7 +70,7 @@ body{
     height: 100%;
     background-color: var(--body-color);
     color: var(--text-color);
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 body.dark-theme{
@@ -125,7 +125,7 @@ button{
 
 @media screen and (min-width: 992px) {
     :root{
-        --biggest-font-size:4rem;
+        --biggest-font-size:2.7rem;
         --h1-font-size: 2.25rem;
         --h2-font-size: 1.5rem;
         --h3-font-size: 1.25rem;
