@@ -4,8 +4,9 @@
 
 .dashboard__container{
     width: 90%;
-    margin-top: 10rem;
-    margin-left: 1rem;
+    margin: 10rem auto;
+    /* padding-left: 1rem; */
+    /* padding-right: 1rem; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -209,5 +210,12 @@ details[open] > summary::marker {
         display: grid;
         grid-template-columns: 300px;
         justify-content: center;
+    }
+}
+
+@media (min-width:1026px){
+    .dashboard__container{
+        margin: 10rem auto;
+        padding-left: 6rem;
     }
 }
