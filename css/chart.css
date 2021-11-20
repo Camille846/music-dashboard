@@ -115,6 +115,7 @@ details[open] > summary::marker {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 1rem;
+    box-shadow: var(--box-shadow-2);
 }
 
 .data__cards-item{
@@ -179,4 +180,34 @@ details[open] > summary::marker {
 
 .card-description{
     font-size: var(--small-font-size);
+    font-weight: var(--semi-bold);
+}
+
+@media (max-width:350px){
+    .dashboard__group-one{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .container-btns{
+        justify-content: center;
+    }
+
+    .add-btn{
+        padding: 1rem 3rem;
+        flex-direction: row;
+        justify-self: flex-end;
+        align-self:flex-end;
+    }
+    
+    .dashboard-subtitle{
+        white-space: wrap;
+    }
+
+    .data__cards{
+        display: grid;
+        grid-template-columns: 300px;
+        justify-content: center;
+    }
 }
