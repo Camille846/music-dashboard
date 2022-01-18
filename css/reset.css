@@ -125,8 +125,8 @@ button{
 
 @media screen and (min-width: 992px) {
     :root{
-        --biggest-font-size:2.7rem;
-        --h1-font-size: 2.25rem;
+        --biggest-font-size:2rem;
+        --h1-font-size: 1.6rem;
         --h2-font-size: 1.5rem;
         --h3-font-size: 1.25rem;
         --normal-font-size: 1rem;
