@@ -57,7 +57,7 @@ if(chk) {
 
 // CHANGE PROFILE LIST ON POPULAR GENRES
 const blues_button = document.getElementById('blues');
-blues_button.checked = true;
+// blues_button.checked = true;
 const blues_container = document.getElementById('blues_container');
 const sertanejo_button = document.getElementById('sertanejo');
 const sertanejo_container = document.getElementById('sertanejo_container');
@@ -135,3 +135,25 @@ window.addEventListener("click", function(event) {
     } 
 });
 
+
+// CHART JS 
+ // === include 'setup' then 'config' above ===
+ 
+ const ctx = document.getElementById('myChart').getContext('2d');
+
+ const configLine = {
+  type: 'line',
+  data: {
+    labels: [ 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul' ],
+    datasets: [{
+      label: 'My First Dataset',
+      data: [65, 59, 80, 81, 56, 55, 40],
+      fill: false,
+      backgroundColor: 'rgb(75, 192, 192)',
+      borderColor: 'rgb(75, 192, 192)',
+      tension: 0.4,
+      fill: true
+    }],
+  }
+};
+ const myChart = new Chart(ctx, configLine);
