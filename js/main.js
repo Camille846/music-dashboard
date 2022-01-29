@@ -1,23 +1,3 @@
-const $menu = document.querySelector('.menu');
-const $nav = document.querySelector('.nav');
-let menuOpen = false;
-$menu.addEventListener('click', function(){
-	if(!menuOpen){
-		$menu.classList.add('open');
-    $nav.style.display = 'flex';
-    document.getElementById('menu-burger').style.marginLeft = '150px';
-    document.getElementById('listening__content').style.marginLeft = '50px';
-		menuOpen = true;
-	}
-	else{
-		$menu.classList.remove('open');
-    $nav.style.display = 'none';
-    document.getElementById('menu-burger').style.marginLeft = '0px';
-    document.getElementById('listening__content').style.marginLeft = '0px';
-		menuOpen = false;
-	}
-});
-
 let swiper = new Swiper(".mySwiper", {
     loop:true,
     pagination: {
@@ -63,8 +43,6 @@ const sertanejo_button = document.getElementById('sertanejo');
 const sertanejo_container = document.getElementById('sertanejo_container');
 const metal_button = document.getElementById('metal');
 const metal_container = document.getElementById('metal_container');
-const country_button = document.getElementById('country');
-const country_container = document.getElementById('country_container');
 const soul_button = document.getElementById('soul');
 const soul_container = document.getElementById('soul_container');
 const eletronic_button = document.getElementById('eletronic');
@@ -79,7 +57,6 @@ window.addEventListener("click", function(event) {
     if(event.target == blues_button) {
         sertanejo_container.style.display = "none";
         metal_container.style.display = "none";
-        country_container.style.display = "none";
         soul_container.style.display = "none";
         eletronic_container.style.display = "none";
         hip_hop_container.style.display = "none";
@@ -87,7 +64,6 @@ window.addEventListener("click", function(event) {
     } else if (event.target == sertanejo_button) {
         blues_container.style.display = "none";
         metal_container.style.display = "none";
-        country_container.style.display = "none";
         soul_container.style.display = "none";
         eletronic_container.style.display = "none";
         hip_hop_container.style.display = "none";
@@ -95,24 +71,14 @@ window.addEventListener("click", function(event) {
     } else if (event.target == metal_button) {
         blues_container.style.display = "none";
         sertanejo_container.style.display = "none";
-        country_container.style.display = "none";
         soul_container.style.display = "none";
         eletronic_container.style.display = "none";
         hip_hop_container.style.display = "none";
         metal_container.style.display = "grid";
-    } else if (event.target == country_button) {
-        blues_container.style.display = "none";
-        sertanejo_container.style.display = "none";
-        metal_container.style.display = "none";
-        soul_container.style.display = "none";
-        eletronic_container.style.display = "none";
-        hip_hop_container.style.display = "none";
-        country_container.style.display = "grid";
     } else if (event.target == soul_button) {
         blues_container.style.display = "none"; 
         sertanejo_container.style.display = "none";
         metal_container.style.display = "none";
-        country_container.style.display = "none";
         eletronic_container.style.display = "none";
         hip_hop_container.style.display = "none";
         soul_container.style.display = "grid";
@@ -120,7 +86,6 @@ window.addEventListener("click", function(event) {
         blues_container.style.display = "none";
         sertanejo_container.style.display = "none";
         metal_container.style.display = "none";
-        country_container.style.display = "none";
         soul_container.style.display = "none";
         hip_hop_container.style.display = "none";
         eletronic_container.style.display = "grid";
@@ -128,7 +93,6 @@ window.addEventListener("click", function(event) {
         blues_container.style.display = "none";
         sertanejo_container.style.display = "none";
         metal_container.style.display = "none";
-        country_container.style.display = "none";
         soul_container.style.display = "none";
         eletronic_container.style.display = "none";
         hip_hop_container.style.display = "grid";
