@@ -398,10 +398,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     border-radius: 50%;
 }
 
-@media (max-width:290px){
-
-}
-
 @media (max-width:374px){
     .artist__img{
         max-width: 280px;
@@ -514,12 +510,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
       grid-column: span 2;
   }
 
-  
-  /* .tabs__wrap{
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: 30px;
-  } */
 
   .news__content{
     width: max-content;
